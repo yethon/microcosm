@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>microcosm.site</title>
+<meta name="description" content="Create, build and deploy your own simple, static and responsive microsite.">
+<meta name="author" content="Ursula Yethon">
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="assets/site.min.css">
+
+<!-- Scripts - enable javascript functions
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="assets/js/site.js"></script> -->
+
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+</head>
+<body>
+
+<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Landing Page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section class="landing-page">
+  <div class="row">
+    <div class="column">
+      <div class="landing-page__title">
+        <h1>microc</h1><img src="./assets/img/microcosm.png" alt="microcosm"/><h1>sm</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="column landing-page__text">
+        <h4>Create, build and deploy your own simple, static and responsive microsite.</h4>
+      </div>
+    </div>
+    <a class="button button-primary button__download" href="https://github.com/yethon/microcosm/archive/v1.0.zip">download</a>
+  </div>
+</section>
+
+<div class="container">
+  <section class="tools">
+    <div class="row">
+      <div class="column">
+        <h4>Tools</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <div class="tool">
+          <a href="http://gulpjs.com" target="_blank"><img src="./assets/img/gulp.png" alt="http://gulpjs.com"/></a>
+        </div>
+        <h6>Easy, automated workflow.</h6>
+      </div>
+      <div class="six columns">
+        <div class="tool">
+          <a href="http://getskeleton.com" target="_blank"><img src="./assets/img/skeleton.png" align="middle" alt="http://getskeleton.com"/></a>
+        </div>
+        <div class="tool_text">
+          <h6>Minimal, responsive CSS thanks to skeleton.</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <div class="tool">
+          <a href="http://github.com" target="_blank"><img src="./assets/img/GitHub-Mark.png"  alt="http://github.com"/></a>
+        </div>
+        <h6>Deploy your site to Github. The best part? It's free!</h6>
+      </div>
+      <div class="six columns">
+        <div class="tool">
+          <a href="http://browsersync.io" target="_blank"><img src="./assets/img/browsersync.png" alt="http://browsersync.io"/></a>
+        </div>
+        <h6>Browsersync lets you view your site on multiple browsers.</h6>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section class="prerequisites">
+    <div class="row">
+      <div class="column">
+        <h4>Prerequisites</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h6>Install <a href="http://nodejs.org" target="_blank">node</a>, join <a href="https://github.com/join" target="_blank">github</a>, set up <a href="https://help.github.com/articles/set-up-git/" target="_blank">git</a> and create your <a href="https://pages.github.com/" target="_blank">site repository</a></h6>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section class="instructions">
+    <div class="row">
+      <div class="column">
+        <h4>Instructions</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h6>Copy microcosm.zip contents into your <code>username.github.io</code> directory</h6>
+        <h6>Your folder should look as follows</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column pre">
+
+        <pre>
+folder/
+└── username.github.io/
+    ├── assets/
+    │   ├── img/
+    │   │   ├── GitHub-Mark-Light.png
+    │   │   ├── blurred_lines-min.jpeg
+    │   │   └── favicon.png
+    │   ├── js/
+    │   │   └── functions.js
+    │   └── styles/
+    │       ├── microcosm.scss
+    │       ├── normalize.css
+    │       └── skeleton.css
+    ├── index.html
+    └── tasks/
+    ├── gulpfile.js
+    ├── package.json
+        </pre>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h6>Install the necessary components and start your server with these commands</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column pre">
+        <pre>
+$ npm install
+$ gulp serve
+        </pre>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section class="design">
+    <div class="row">
+      <div class="column">
+        <h4>Design</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h6>Make all of your changes in <code>index.html</code> file and the <code>assets</code> directory</h6>
+        <h6>Maintain the established file structure or update gulp tasks to handle any changes</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section class="deploy">
+    <div class="row">
+      <div class="column">
+        <h4>Deploy</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h6>Execute these commands to update your repository and automatically deploy your site</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column pre">
+        <pre>
+$ git add .
+$ git commit -m 'My Microsite'
+$ git push
+        </pre>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer__about">
+      <div class="row">
+        <div class="column">
+          <h6>Created by U Yethon</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="https://github.com/yethon/microcosm" target="_blank"><img src="./assets/img/GitHub-Mark-Light.png"  alt="github.com"/></a>
+          <a href="http://www.linkedin.com/in/uyethon" target="_blank"><img src="./assets/img/In.png"  alt="http://www.linkedin.com/in/uyethon"/></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer__credits">
+        <div class="column">
+          <p>skeleton.css by <a href="https://github.com/dhg" target="_blank">Dave Gamache</a> at <a href="http://getskeleton.com/" target="_blank">getskeleton.com</a></p>
+          <p>icon from the <a href="https://thenounproject.com/GregSuj/collection/beyond-the-infinite/" target="_blank">Beyond the Infinite</a> collection created by <a href="http://gregory.sujkowski.fr/" target="_blank">Gregory Sujkowski</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+

@@ -1,7 +1,8 @@
 //colors
 $white: white;
-$violet: #3f51b5;
 $light-gray-border: #eee;
+$violet: #3f51b5;
+$light-gray-pre-border: #e1e1e1;
 
 //fonts
 $font_0: 'Menlo';
@@ -37,12 +38,23 @@ $font_5: 'monospace';
   color: $white;
 }
 
+section {
+  text-align: center;
+  &.landing-page {
+    display: flex;
+  }
+}
+
 .landing-page__title {
   white-space: nowrap;
   h1 {
     display: inline;
     font-weight: bold;
     vertical-align: middle;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 4rem;
   }
 }
 
@@ -53,23 +65,33 @@ $font_5: 'monospace';
   }
 }
 
-section {
-  text-align: center;
-  &.landing-page {
-    display: flex;
+.landing-page__download-button {
+  margin: 4rem 0 2rem;
+}
+
+.tool {
+  @extend .center;
+  height: 7rem;
+}
+
+.tools {
+  margin-top: 2rem;
+  border-bottom: 1px solid $light-gray-border;
+  img {
+    width: 3rem;
+    vertical-align: middle;
   }
 }
 
-.content {
-  margin: 0 2rem;
-  h4 {
-    text-align: center;
-    text-transform: uppercase;
-  }
+.instructions,
+.deploy {
+  margin-top: 2rem;
 }
 
-.ipsum {
-  text-align: left;
+.prerequisites,
+.design {
+  margin-top: 2rem;
+  border-bottom: 1px solid $light-gray-border;
 }
 
 .footer__credits {
@@ -97,8 +119,28 @@ footer {
   text-align: center;
 }
 
+pre {
+  word-wrap: break-word;
+  background: $white;
+  font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5;
+  padding: 2.5rem 3rem;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid $light-gray-pre-border;
+  border-radius: 4px;
+  text-align: left;
+  margin: 1.5rem 0 1.5rem;
+}
+
+.pre {
+  font-size: 1.1rem;
+}
+
 @media(min-width: 400px) {
   .landing-page__title {
+    img {
+      vertical-align: middle;
+      max-width: 8rem;
+    }
     h1 {
       font-size: 7rem;
     }
@@ -109,7 +151,17 @@ footer {
       font-size: 2.4rem;
     }
   }
-  .content {
+  .tools {
+    margin-top: 3rem;
+    img {
+      width: 3rem;
+      vertical-align: middle;
+    }
+  }
+  .prerequisites,
+  .instructions,
+  .design,
+  .deploy {
     margin-top: 3rem;
   }
   footer {
@@ -123,6 +175,10 @@ footer {
 
 @media(min-width: 750px) {
   .landing-page__title {
+    img {
+      vertical-align: middle;
+      max-width: 13rem;
+    }
     h1 {
       font-size: 10rem;
     }
@@ -130,9 +186,21 @@ footer {
   .landing-page__text {
     margin-top: 9rem;
   }
-  .content {
+  .tools {
     margin-top: 5rem;
-    border-bottom: 1px solid $light-gray-border;
+    img {
+      width: 3rem;
+      vertical-align: middle;
+    }
+  }
+  .prerequisites,
+  .instructions,
+  .design,
+  .deploy {
+    margin-top: 5rem;
+  }
+  .pre {
+    font-size: 1.3rem;
   }
   footer {
     padding: 4rem 0 1rem;

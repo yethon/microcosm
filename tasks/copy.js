@@ -7,6 +7,6 @@ gulp.task('copy-images', function () {
 });
 
 gulp.task('copy-index', function () {
-  return gulp.src('assets/index.html')
+  return gulp.src('index.html')
     .pipe(gulp.dest('./dist'));
 });
