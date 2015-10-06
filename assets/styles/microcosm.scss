@@ -1,0 +1,144 @@
+//colors
+$white: white;
+$violet: #3f51b5;
+$light-gray-border: #eee;
+
+//fonts
+$font_0: 'Menlo';
+$font_1: 'Bitstream Vera Sans Mono';
+$font_2: 'DejaVu Sans Mono';
+$font_3: 'Monaco';
+$font_4: 'Consolas';
+$font_5: 'monospace';
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-flex-align: center;
+  -ms-justify-content: center;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+
+.landing-page {
+  @extend .center;
+  text-align: center;
+  height: 100vh;
+  background-image: url('./img/blurred_lines-min.jpeg');
+  background-size: cover;
+  color: $white;
+}
+
+.landing-page__title {
+  white-space: nowrap;
+  h1 {
+    display: inline;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+}
+
+.landing-page__text {
+  margin-top: 2rem;
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+section {
+  text-align: center;
+  &.landing-page {
+    display: flex;
+  }
+}
+
+.content {
+  margin: 0 2rem;
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.ipsum {
+  text-align: left;
+}
+
+.footer__credits {
+  font-weight: 100;
+  font-size: 1.1rem;
+  text-align: left;
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.footer__about {
+  h6 {
+    margin: 1rem;
+  }
+  img {
+    max-width: 2rem;
+    margin: 0 1rem 3rem;
+  }
+}
+
+footer {
+  background-color: $violet;
+  color: $white;
+  text-align: center;
+}
+
+@media(min-width: 400px) {
+  .landing-page__title {
+    h1 {
+      font-size: 7rem;
+    }
+  }
+  .landing-page__text {
+    margin-top: 3rem;
+    h4 {
+      font-size: 2.4rem;
+    }
+  }
+  .content {
+    margin-top: 3rem;
+  }
+  footer {
+    padding: 2rem 0 1rem;
+  }
+  .footer__about img {
+    max-width: 2rem;
+    margin: 0 1rem 3rem;
+  }
+}
+
+@media(min-width: 750px) {
+  .landing-page__title {
+    h1 {
+      font-size: 10rem;
+    }
+  }
+  .landing-page__text {
+    margin-top: 9rem;
+  }
+  .content {
+    margin-top: 5rem;
+    border-bottom: 1px solid $light-gray-border;
+  }
+  footer {
+    padding: 4rem 0 1rem;
+  }
+  .footer__about img {
+    max-width: 3rem;
+    margin: 0 1rem 3rem;
+  }
+}
