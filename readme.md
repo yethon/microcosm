@@ -28,7 +28,7 @@ repository</a>.
 
 ### Instructions
 
-If you plan on deploying your site to github, clone this repository into your **username.github.io** folder.
+Clone the repo:
 
 ```
 $ git clone git@github.com:yethon/microcosm.git
@@ -38,22 +38,21 @@ You should now have a folder with the following structure:
 
 ```
 folder/
-└── username.github.io/
-    ├── assets/
-    │   ├── img/
-    │   │   ├── GitHub-Mark-Light.png
-    │   │   ├── blurred_lines-min.jpeg
-    │   │   └── favicon.png
-    │   ├── js/
-    │   │   └── functions.js
-    │   └── styles/
-    │       ├── microcosm.scss
-    │       ├── normalize.css
-    │       └── skeleton.css
-    ├── index.html
-    └── tasks/
-    ├── gulpfile.js
-    ├── package.json
+  ├── assets/
+  │   ├── img/
+  │   │   ├── GitHub-Mark-Light.png
+  │   │   ├── blurred_lines-min.jpeg
+  │   │   └── favicon.png
+  │   ├── js/
+  │   │   └── functions.js
+  │   └── styles/
+  │       ├── microcosm.scss
+  │       ├── normalize.css
+  │       └── skeleton.css
+  ├── index.html
+  └── tasks/
+  ├── gulpfile.js
+  ├── package.json
 ```
 
 Install and Serve!
@@ -67,15 +66,33 @@ Make all of your changes to index.html and in the assets/ folder.
 
 Maintain the established file structure or update the gulp tasks to handle any changes.
 
-When you're ready to deploy:
+Your build is stored in the dist/ folder. It's always uglified and up to date.
+
+When you're ready to deploy copy the contents of your dist/ folder into your **username.github.io**
+folder.
+
+You should now have a folder with the following structure:
+
+```
+username.github.io
+  ├── assets
+  │   ├── img
+  │   │   ├── GitHub-Mark-Light.png
+  │   │   ├── blurred_lines-min.jpeg
+  │   │   └── favicon.png
+  │   ├── js
+  │   │   └── site.js
+  │   └── site.min.css
+  └── index.html
+```
+
+Deploy your site with these commands:
 
 ```
 $ git add .
 $ git commit -m 'My Microsite'
 $ git push
 ```
-
-*If you'd like to deploy your site elsewhere, it's packaged in the dist/ folder. It's always uglified and up to date! Just copy & paste whenever you're ready.*
 
 ## Need some inspiration?
 
