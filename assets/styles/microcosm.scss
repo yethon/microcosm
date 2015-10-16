@@ -1,3 +1,5 @@
+@import 'center';
+
 //colors
 $white: white;
 $light-gray-border: #eee;
@@ -11,23 +13,6 @@ $font_2: 'DejaVu Sans Mono';
 $font_3: 'Monaco';
 $font_4: 'Consolas';
 $font_5: 'monospace';
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
-  -ms-flex-align: center;
-  -ms-justify-content: center;
-
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-justify-content: center;
-}
 
 .landing-page {
   @extend .center;
@@ -119,20 +104,17 @@ footer {
   text-align: center;
 }
 
-pre {
+.pre {
+  font-size: 1.1rem;
   word-wrap: break-word;
   background: $white;
   font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5;
-  padding: 2.5rem 3rem;
+  padding: 2.5rem 2rem;
   -webkit-font-smoothing: antialiased;
   border: 1px solid $light-gray-pre-border;
   border-radius: 4px;
   text-align: left;
   margin: 1.5rem 0 1.5rem;
-}
-
-.pre {
-  font-size: 1.1rem;
 }
 
 @media(min-width: 400px) {
@@ -163,6 +145,9 @@ pre {
   .design,
   .deploy {
     margin-top: 3rem;
+  }
+  .pre {
+    padding: 2.5rem 3rem;
   }
   footer {
     padding: 2rem 0 1rem;
@@ -201,6 +186,7 @@ pre {
   }
   .pre {
     font-size: 1.3rem;
+    padding: 2.5rem 3rem;
   }
   footer {
     padding: 4rem 0 1rem;
