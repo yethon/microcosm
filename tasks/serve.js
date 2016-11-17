@@ -1,5 +1,5 @@
-var gulp        = require('gulp');
-var runSequence = require('run-sequence');
+import gulp from 'gulp';
+import runSequence from 'run-sequence';
 
 // $ gulp serve
 //    1. delete everything from the 'dist' folder
@@ -10,7 +10,7 @@ var runSequence = require('run-sequence');
 //    6. set up watchers - every change made inside the 'assets' folder will trigger all browsers to reload
 //    7. BOOM! goes the dynamite (ie. launch the site in a browser)
 
-gulp.task('serve', function (callback) {
+gulp.task('serve', (callback) => {
   runSequence('build',
               'server',
               'watch',
