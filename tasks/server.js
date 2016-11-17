@@ -1,8 +1,8 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync');
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
 
 // launch a browser and serve the site from 'dist' folder
-gulp.task('server', function () {
+gulp.task('server', () => {
   browserSync.init({
     server: './dist'
   });
