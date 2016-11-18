@@ -1,3 +1,3 @@
-# <a href="http://microcosm.site" target="_blank">microcosm</a>
+# <a href="https://ythn.me/microcosm" target="_blank">microcosm</a>
 
 Site source.
