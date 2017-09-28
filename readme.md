@@ -1,4 +1,4 @@
-# <a href="https://ythn.me/microcosm" target="_blank">microcosm</a>
+# <a href="https://yethon.github.io/microcosm" target="_blank">microcosm</a>
 A starter project to help you create, build and deploy your own simple, static and responsive microsite.
 
 Uses the responsive CSS of skeleton. Visit <a href="http://getskeleton.com" target="_blank">getskeleton.com</a> for features and implementation details.
@@ -7,7 +7,7 @@ Uses the responsive CSS of skeleton. Visit <a href="http://getskeleton.com" targ
 
 There are 2 ways to get started:
 
-- Visit <a href="https://ythn.me/microcosm" target="_blank">microcosm</a> for the .zip and all the instructions
+- Visit <a href="https://yethon.github.io/microcosm" target="_blank">microcosm</a> for the .zip and all the instructions
 - Clone the repo
 
 ### What's in the repo?
