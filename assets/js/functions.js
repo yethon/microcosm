@@ -2,15 +2,15 @@
 
 //$( document ).ready(function() {
 
-  //function init() {
-    //var body = $('body');
-    //console.warn('body ::: ', body);
-    //body.on('click', sayWelcome);
-  //}
+//function init() {
+//var body = $('body');
+//console.warn('body ::: ', body);
+//body.on('click', sayWelcome);
+//}
 
-  //function sayWelcome() {
-    //alert("welcome! bienvenida!");
-  //}
+//function sayWelcome() {
+//alert("welcome! bienvenida!");
+//}
 
-  //init();
+//init();
 //});
